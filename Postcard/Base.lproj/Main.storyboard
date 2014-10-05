@@ -77,6 +77,14 @@
                                     <rect key="frame" x="16" y="327" width="288" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bog-aV-vyd">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="280" width="288" height="30"/>
+                                </variation>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R11-zs-Jxt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.54459999137397963" blue="0.2570256303400793" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,14 +108,15 @@
                                     <rect key="frame" x="16" y="72" width="288" height="92"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bog-aV-vyd">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-ZJ-OVZ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="280" width="288" height="30"/>
+                                    <rect key="frame" x="25" y="172" width="180" height="54"/>
                                 </variation>
-                            </textField>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AJK-zX-T8E">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -120,9 +129,10 @@
                             <mask key="subviews">
                                 <exclude reference="xuR-Vz-7rL"/>
                                 <exclude reference="zXq-ee-JAF"/>
+                                <exclude reference="bog-aV-vyd"/>
                                 <exclude reference="R11-zs-Jxt"/>
                                 <exclude reference="GVA-KO-JGQ"/>
-                                <exclude reference="bog-aV-vyd"/>
+                                <exclude reference="WcS-ZJ-OVZ"/>
                                 <exclude reference="AJK-zX-T8E"/>
                             </mask>
                         </variation>
@@ -130,9 +140,10 @@
                             <mask key="subviews">
                                 <include reference="xuR-Vz-7rL"/>
                                 <include reference="zXq-ee-JAF"/>
+                                <include reference="bog-aV-vyd"/>
                                 <include reference="R11-zs-Jxt"/>
                                 <include reference="GVA-KO-JGQ"/>
-                                <include reference="bog-aV-vyd"/>
+                                <include reference="WcS-ZJ-OVZ"/>
                                 <include reference="AJK-zX-T8E"/>
                             </mask>
                         </variation>
@@ -142,6 +153,7 @@
                         <outlet property="enterNameTextField" destination="bog-aV-vyd" id="rNS-D4-zAg"/>
                         <outlet property="mailButton" destination="R11-zs-Jxt" id="dLK-nx-daP"/>
                         <outlet property="messageLabel" destination="GVA-KO-JGQ" id="V3u-yl-qGv"/>
+                        <outlet property="nameLabel" destination="WcS-ZJ-OVZ" id="IyR-l9-rmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
